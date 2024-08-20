@@ -185,7 +185,9 @@ button.x {
 }
 .popUp-wrapper .input_saveBtn {
   color: rgba(var(--color1));
-  transform: translate(-5rem, -5rem);
+  font-size: 1rem;
+  display: block;
+  transform: translate(70vw, -6rem);
 }
 
 /*  */
