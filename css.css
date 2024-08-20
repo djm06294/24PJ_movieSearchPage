@@ -184,9 +184,8 @@ button.x {
   resize: none;
 }
 .popUp-wrapper .input_saveBtn {
-  color: white;
-  display: absolute;
-  transform: translate(72vw, -6rem);
+  color: rgba(var(--color1));
+  transform: translate(-5rem, -5rem);
 }
 
 /*  */
