@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css.css" />
+    <script defer type="module" src="./apikey.js"></script>
+    <script defer type="module" src="./script.js"></script>
+    <title>영화 검색</title>
+  </head>
+  <body>
+    <header>
+      <h1>CINE<i>6</i>IX</h1>
+      <div class="sections">
+        <!-- <button class="active">Section01</button>
+        <button>Section02</button> -->
+        <button>영화 검색 사이트 시네식스에 오신 것을 환영합니다</button>
+      </div>
+      <div class="searchBar">
+        <!-- <select name="searchType" id="searchType">
+          <option value="name">영화명</option>
+          <option value="director">감독명</option>
+        </select> -->
+        <input type="text" id="searchText" placeholder="영화를 검색해보세요!" />
+      </div>
+    </header>
+    <main>
+      <button class="x"><i class="fa-solid fa-x"></i></button>
+      <section class="popUp-section">
+        <!-- <div class="popUp-wrapper">
+          
+          <div class="upper-popUp">
+            <div class="main-poster">
+              <img src="../img/tiffany_poster.jfif" alt="">
+            </div>
+            <div class="movie-info">
+              <p class="starRate"><i class="fa-solid fa-star"></i> 8.8</p>
+              <h2 class="title">인사이드 아웃 2</h2>
+              <p class="genre">드라마 / 애니메이션</p>
+              <p class="director">감독 : 피트 닥터</p>
+              <p class="actor">배우 : 라일리, 슬픔이</p>
+              <img class="backdrop" src="../img/tiffany_poster.jfif" alt="">
+            </div>
+          </div>
+          <div class="lower-popUp">
+            <p class="line">믿어왔던 상식과 규칙에 통렬한 카운터를 날리는 스타일리시 어ddddddd쩌구</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis ab nihil eligendi laudantium sapiente eveniet corrupti in voluptas reiciendis odio numquam voluptatum debitis facere soluta, rerum exercitationem error. Voluptatibus, aliquid. Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis aut minima provident asperiores unde voluptate tempora facere earum placeat magnam fugiat officiis atque sit beatae repellendus corporis repellat, rerum dolorum?</p>
+          </div>
+          <div class="myNoteWrap">
+            <textarea class="myNote" placeholder="나의 한줄평" id="123" disabled></textarea>
+            <button class="input_saveBtn"><i class="fa-solid fa-pencil"></i></button>
+          </div>
+        </div> -->
+      </section>
+      <section class="section1">
+        <div class="topRateMoviesCon">
+          <!-- <div class="movie">
+            <img src="../img/tiffany_poster.jfif" alt="" />
+            <div>
+              <div>
+                <i class="genre">genre</i>
+                <i class="title">영화제목</i>
+              </div>
+              <i class="language">180min</i>
+            </div>
+          </div> -->
+        </div>
+        <div class="pagenation">
+          <!-- <button>이전페이지</button>
+          <button>이전</button>
+          <button class="active">1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+          <button>다음</button>
+          <button>다음페이지</button> -->
+        </div>
+      </section>
+
+      <section class="section2">
+        <h2>최신영화</h2>
+        <div class="recentMoviesCon">
+          <!-- <div class="movieWrapper">
+            <img id="" src="../img/tiffany_poster.jfif" alt="" />
+            <div>
+                <h3>제목</h3>
+                <p>장르/장르</p>
+                <p>
+                설명 Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Libero incidunt consequuntur reprehenderit sit, omnis porro
+                numquam, fuga aut debitis minima animi neque quo, quam sed! Sit
+                deserunt quis ratione vero!
+                </p>
+                <i>언어</i>
+            </div>
+          </div>
+          <img id="" src="../img/tiffany_poster.jfif" alt="" />
+          <img id="" src="../img/tiffany_poster.jfif" alt="" /> -->
+        </div>
+      </section>
+
+      <section class="section3">
+        <h2>장르별</h2>
+        <div class="genreBtnsCon">
+          <button id="18" class="active">드라마</button>
+          <button id="35">코미디</button>
+          <button id="28">액션</button>
+          <button id="80">스릴러</button>
+          <button id="14">판타지</button>
+          <button id="16">애니메이션</button>
+        </div>
+        <div class="genreMoviesCon">
+          <!-- <div class="movie"> -->
+          <img class="movie" src="../img/tiffany_poster.jfif" alt="" />
+          <!-- </div> -->
+        </div>
+        <div class="pagenation">
+          <button>이전페이지</button>
+          <button>이전</button>
+          <button class="active">1</button>
+          <button>2</button>
+          <button>3</button>
+          <button>4</button>
+          <button>5</button>
+          <button>다음</button>
+          <button>다음페이지</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div style="height: 100px">
+        <div>
+          <p class="topic">제작자</p>
+          <p>김주영</p>
+        </div>
+        <div>
+          <p class="topic">사용된 기술</p>
+          <a href="https://www.themoviedb.org/?language=ko">TMDB API</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
